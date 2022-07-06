@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+    <div class="container">
+        <h2>Etch-A-Sketch</h2>
+
+        <div class="optionsContainer">
+            <div class="customise spacing">
+                <p class="colorText" id="drawText" style="position: absolute;">Draw Colour</p>
+                <input placeholder="Draw" type="color" name="" id="colorPicker" class="colorPicker" value="#000000"></div>
+            <div class="customise spacing">
+                <p class="colorText" id="backgroundText" style="position: absolute;">Background Colour</p>
+                <input type="color" name="" id="backgroundColor" class="colorPicker" value="#ffffff"></div>
+            
+            
+            <div class="spacing" id="slideContainer" style="display: flex; justify-content:center; flex-direction: column; align-items: center;">
+                <p  style="position: absolute;">Pixels</p>
+                <input draggable="false" class="slider" type="range" name="" id="sizeRange" min="1" max="64" value="16">
+                
+            </div>
+
+            <p id="slideCount"></p>
+            <button id="clearButton">Clear Board</button>
+        </div>
+
+        <div class='sketchContainer' id='sketchContainer'></div>
+    </div>
+    <script src="eas.js">
+    </script>
+    
+    
+    
+</body>
+</html>
